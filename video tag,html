@@ -1,0 +1,8 @@
+<h2 id="entertainment">Entertainment Buzz</h2>
+    <p>New movie trailer released today. Fans are excited!</p>
+    <!-- Local Video -->
+    <video width="560" height="315" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
