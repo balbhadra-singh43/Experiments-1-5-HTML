@@ -1,0 +1,46 @@
+body{
+    background: grey;
+    text-align: center;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+div{
+    color: black;
+    background: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+
+}
+img{
+    width: 300px;
+}
+h3{
+    color: black;
+}
+p{
+    font-size: 20px;
+    color: black;
+}
+.price{
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+}
+button{
+    background: purple;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+button:hover{
+    background: rgb(223, 105, 223);
+    cursor: pointer;
+}
