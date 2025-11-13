@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HTML Form</title>
+</head>
+<body>
+<form action="page.html" method="post">
+<label>Email:</label>
+<input type="email" name="email" required><br/>
+<label>Age (18-60):</label>
+<input type="number" name="age" min="18" max="60" required><br/>
+<label>Username (5-10 chars):</label>
+<input type="text" name="username" minlength="5" maxlength="10" required><br/>
+<label>Only Letters:</label>
+<input type="text" name="letters" pattern="[A-Za-z]+" required><br/>
+<label>Even Number:</label>
+<input type="number" name="even" step="2" required><br/>
+<label>Website:</label><input type="url" name="website" required><br/>
+<input type="submit" />
+</form>
+<!-- <form novalidate>
+<input type="email" name="email" required>
+<input type="submit"></form> -->
+</body>
+</html> 119
