@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 60px;
+            box-shadow: 0 2px 6px lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px;
+            background-color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text span {
+            color: blue;
+        }
+
+        .hero-text p {
+            margin-bottom: 20px;
+            color: dimgray;
+        }
+
+        .hero-text button {
+            padding: 10px 20px;
+            background-color: blue;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: darkblue;
+        }
+
+        .hero img {
+            width: 280px;
+            border-radius: 50%;
+            background-color: beige;
+        }
+
+        section {
+            padding: 70px 80px;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        section p {
+            max-width: 700px;
+            margin: auto;
+            color: dimgray;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .skill-box {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px lightgray;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px lightgray;
+            text-align: left;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: darkblue;
+        }
+
+        footer {
+            background-color: lightgray;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px 20px;
+                text-align: center;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+                display: inline-block;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .hero-text {
+                margin-top: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .hero img {
+                width: 200px;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .skills {
+                flex-wrap: wrap;
+            }
+
+            .projects {
+                flex-wrap: wrap;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>BALBHADRA SINGH</span></h1>
+            <p>Aspiring Web Developer | HTML, CSS, GitHub</p>
+            <button>Hire Me</button>
+        </div>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Profile Image">
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Web Developer learning Frontend development with HTML, CSS, and GitHub.
+            I enjoy creating clean and responsive websites and improving my skills every day.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">Responsive Design</div>
+            <div class="skill-box">Git & GitHub</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h4>Portfolio Website</h4>
+                <p>Responsive HTML & CSS portfolio design.</p>
+            </div>
+            <div class="project-card">
+                <h4>Student Registration Form</h4>
+                <p>Clean & validated form using HTML.</p>
+            </div>
+            <div class="project-card">
+                <h4>Product Landing Page</h4>
+                <p>Modern UI with flexbox layout.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label>Full Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 MyPortfolio | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
