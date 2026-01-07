@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Amazon Clone - Shop online for everything" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Amazon.in - Online Shopping India</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="amazon.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <img
+          class="logo"
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="Amazon Logo"
+        />
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="small-text">Deliver to</span>
+            <strong>Sultanpur 228142</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <select aria-label="Search category">
+          <option>All</option>
+          <option>Alexa Skills</option>
+          <option>Amazon Devices</option>
+          <option>Amazon Fashion</option>
+          <option>Books</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in" aria-label="Search" />
+        <button aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="language">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+          alt="India Flag"
+        />
+        <select class="lang" aria-label="Language">
+          <option>EN</option>
+          <option>हिंदी</option>
+        </select>
+      </div>
+
+      <div class="nav-right">
+        <div class="nav-item">
+          <span class="small-text">Hello, Sign in</span>
+          <strong>Account & Lists</strong>
+        </div>
+        <div class="nav-item">
+          <span class="small-text">Returns</span>
+          <strong>& Orders</strong>
+        </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <b>Cart</b>
+        </div>
+      </div>
+    </header>
+
+    <div class="subnav">
+      <input type="checkbox" id="menu-toggle" hidden />
+      <label for="menu-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i> All
+      </label>
+
+      <div class="side-menu">
+        <div class="side-header">
+          <i class="fa-solid fa-user"></i>
+          Hello, sign in
+          <label for="menu-toggle" class="close-btn">✕</label>
+        </div>
+
+        <div class="side-content">
+          <h3>Trending</h3>
+          <a href="#">Best Sellers</a>
+          <a href="#">New Releases</a>
+          <a href="#">Movers and Shakers</a>
+          <hr />
+          <h3>Digital Content and Devices</h3>
+          <a href="#">Echo & Alexa</a>
+          <a href="#">Fire TV</a>
+          <a href="#">Kindle E-Readers & e-Books</a>
+          <a href="#">Audible Audiobooks</a>
+          <a href="#">Amazon Prime Video</a>
+          <a href="#">Amazon Prime Music</a>
+          <hr />
+          <h3>Shop by Category</h3>
+          <a href="#">Mobiles, Computers</a>
+          <a href="#">TV, Appliances, Electronics</a>
+          <a href="#">Men's Fashion</a>
+          <a href="#">Women's Fashion</a>
+          <hr />
+          <h3>Programs & Features</h3>
+          <a href="#">Gift Cards and Mobile Recharges</a>
+          <a href="#">Amazon Launchpad</a>
+          <a href="#">Amazon Business</a>
+          <a href="#">Handloom and Handicrafts</a>
+          <hr />
+          <h3>Help & Settings</h3>
+          <a href="#">Your Account</a>
+          <a href="#">Customer Service</a>
+          <a href="#">Sign in</a>
+        </div>
+      </div>
+
+      <label for="menu-toggle" class="overlay"></label>
+
+      <a href="#">Fresh <i class="fa-solid fa-caret-down"></i></a>
+      <a href="#">MX Player</a>
+      <a href="#">Sell</a>
+      <a href="#">Best Sellers</a>
+      <a href="#">Mobiles</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Prime</a>
+      <a href="#">Amazon Pay</a>
+      <a href="#">New Releases</a>
+      <a href="#">Electronics</a>
+      <a href="#">Fashion</a>
+      <a href="#">Home & Kitchen</a>
+      <a href="#">Books</a>
+      <a href="#">Gift Cards</a>
+    </div>
+
+    <div class="hero">
+      <img
+        src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/APAY/AugART/travel/BUS_PC_Hero_1500x600_5._CB775503085_.jpg"
+        alt="Amazon Deals"
+      />
+      <img
+        src="https://m.media-amazon.com/images/I/81L1guo+GzL._SX3000_.jpg"
+        alt="Budget Products"
+      />
+      <img
+        src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/uber_new_high._CB537689643_.jpg"
+        alt="Electronics"
+      />
+    </div>
+
+    <section class="shop-section">
+      <div class="shop-card">
+        <h2>Revamp your home in style</h2>
+        <div class="card-grid">
+          <div class="item">
+            <a href="#">
+              <img src="assets/shopsection/img 1.webp" alt="Cushion covers" />
+              <p>Wall decors</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="assets/shopsection/img 51.jpg" alt="Figurines" />
+              <p>Floor mats and more</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                alt="Home storage"
+              />
+              <p>Home storage</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+                alt="Lighting"
+              />
+              <p>Lighting solutions</p>
+            </a>
+          </div>
+        </div>
+        <a href="#">Explore all</a>
+      </div>
+
+      <div class="shop-card">
+        <h2>Upto 60% off | Footwears and handbags</h2>
+        <div class="card-grid">
+          <div class="item">
+            <img
+              src="https://m.media-amazon.com/images/I/81SRDNUx+kL._AC_UL480_FMwebp_QL65_.jpg"
+              alt="Handbags"
+            />
+            <p>Up to 45% off | Handbags</p>
+          </div>
+          <div class="item">
+            <img src="https://m.media-amazon.com/images/I/61dDCXobmkL._AC_UL480_FMwebp_QL65_.jpg" alt="Kitchen appliances" />
+            <p>Up to 60% off | Sports shoes </p>
+          </div>
+          <div class="item">
+            <img
+              src="https://m.media-amazon.com/images/I/71gdPwgPoXL._AC_UL480_FMwebp_QL65_.jpg"
+              alt="Football shoes"
+            />
+            <p>Min. 50% off | Football shoes</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://m.media-amazon.com/images/I/71ucfxShFYL._AC_UL480_FMwebp_QL65_.jpg"
+              alt="Slippers"
+            />
+            <p>Slippers | Flat 40% off</p>
+          </div>
+        </div>
+        <a href="#">Create a free account</a>
+      </div>
+
+      <div class="shop-card">
+        <h2>Appliances for your home | Up to 55% off</h2>
+        <div class="card-grid">
+          <div class="item">
+            <img src="https://m.media-amazon.com/images/I/81C8goHTUbL._AC_UY327_FMwebp_QL65_.jpg" alt="Electric kettle" />
+            <p>Electric kettle</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img6.png" alt="Refrigerators" />
+            <p>Refrigerators</p>
+          </div>
+          <div class="item">
+            <img src="assets/img 56.webp"/>
+            <p>Airfriers</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/ing 57.webp" alt="Washing machines" />
+            <p>Washing machines</p>
+          </div>
+        </div>
+        <a href="#">See more</a>
+      </div>
+
+      <div class="shop-card">
+        <h2>Starting ₹149 | Headphones</h2>
+        <div class="card-grid">
+          <div class="item">
+            <img src="assets/shopsection/boat.png" alt="boAt headphones" />
+            <p>Starting ₹249 | boAt</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/boult.png" alt="Boult headphones" />
+            <p>Starting ₹349 | Boult</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/noise.png" alt="Noise headphones" />
+            <p>Starting ₹649 | Noise</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/zebro.png" alt="Zebronics headphones" />
+            <p>Starting ₹149 | Zebronics</p>
+          </div>
+        </div>
+        <a href="#">See all offers</a>
+      </div>
+    </section>
+
+    <section class="shop-section-2">
+      <div class="shop-card">
+        <h2>Starting ₹49 | Deals on home essentials</h2>
+        <div class="card-grid">
+          <div class="item">
+            <img src="assets/shopsection/img10.png" alt="Cleaning supplies" />
+            <p>Cleaning supplies</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img11.png" alt="Bathroom accessories" />
+            <p>Bathroom accessories</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img12.png" alt="Home tools" />
+            <p>Home tools</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img13.png" alt="Wallpapers" />
+            <p>Wallpapers</p>
+          </div>
+        </div>
+        <a href="#">Explore all</a>
+      </div>
+
+      <div class="shop-card">
+        <h2>Continue Shopping deals</h2>
+        <div class="card-grid">
+          <div class="item">
+            <a href="#">
+              <img src="https://m.media-amazon.com/images/I/711YUUKWz-L._AC_SY145_.jpg" alt="Product" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://m.media-amazon.com/images/I/81kSjn1RyXL._AC_SY145_.jpg" alt="Product" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://m.media-amazon.com/images/I/41SXaqSZv-L._MCnd_AC_.jpg" alt="Product" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://m.media-amazon.com/images/I/51ucu0nCeSL._MCnd_AC_.jpg" alt="Product" />
+            </a>
+          </div>
+        </div>
+        <a href="#">See more deals</a>
+      </div>
+
+      <div class="shop-card full-image-card">
+        <a href="#" class="product-image">
+          <img src="assets/img 58.webp" alt="Motorcycle Saddle Bag" />
+        </a>
+        <div class="product-info">
+          <p class="product-title">
+            RIDE AND DRIVE Wanderlust Motorcycle Saddle Bag, Water-Resistant,
+            Expandable, Reflective Accents
+          </p>
+          <div class="price-row">
+            <span class="current-price">₹5,499</span>
+            <span class="old-price">₹6,999</span>
+          </div>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="shop-card">
+        <h2>Automotive essentials | up to 60% off</h2>
+        <div class="card-grid">
+          <div class="item">
+            <img src="assets/shopsection/img14.png" alt="Cleaning accessories" />
+            <p>Cleaning accessories</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img15.png" alt="Tyre care" />
+            <p>Tyre & rim care</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img16.png" alt="Helmets" />
+            <p>Helmets</p>
+          </div>
+          <div class="item">
+            <img src="assets/shopsection/img17.png" alt="Vacuum cleaner" />
+            <p>Vacuum cleaner</p>
+          </div>
+        </div>
+        <a href="#">See all offers</a>
+      </div>
+    </section>
+
+    <section class="recommend-section">
+      <div class="recommend-header">
+        <h2>Related to items you've viewed</h2>
+        <a href="#">See more</a>
+      </div>
+      <div class="recommend-slider">
+        <a href="#" class="recommend-item">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/61LPolIUHxL._AC_UL165_SR165,165_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/418DkQroqbL._MCnd_AC_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/41JWdC9KoOL._SY300_SX300_QL70_FMwebp_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71VRZA2xjPL._AC_UF480,480_SR480,480_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71uLWiCNT1L._AC_UF480,480_SR480,480_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/51LoviZ7+aL._AC_UL116_SR116,116_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/I/61wU7VJsTbL._AC_UL165_SR165,165_.jpg"
+            alt="Product"
+          />
+        </a>
+        
+      </div>
+    </section>
+
+    <section class="recommend-section">
+      <div class="recommend-header">
+        <h2>Best Sellers in Clothing & Accessories</h2>
+        <a href="#">See more</a>
+      </div>
+      <div class="recommend-slider">
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71A7tYnlJuL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/51sSJUx8mwL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/51s6QK-gLcL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71GaH2nLQ6L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/61jVUB4y7pL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/616jdfyhw8L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71IGbA-YY1L._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/81fBDyL6+KL._AC_UL480_FMwebp_QL65_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/71DCFWHFolL._AC_SY200_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/61hz9cK6gnL._AC_SY200_.jpg"
+            alt="Product"
+          />
+        </a>
+        <a href="#" class="recommend-item">
+          <img
+            src="https://m.media-amazon.com/images/I/61l0MoyijTL._AC_SY200_.jpg"
+            alt="Product"
+          />
+        </a>
+      </div>
+    </section>
+
+    
+    <footer class="amazon-footer">
+      <div class="back-to-top">
+        <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Get to Know Us</h4>
+          <a href="#">About Amazon</a>
+          <a href="#">Careers</a>
+          <a href="#">Press Releases</a>
+          <a href="#">Amazon Science</a>
+        </div>
+        <div>
+          <h4>Connect with Us</h4>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div>
+          <h4>Make Money with Us</h4>
+          <a href="#">Sell on Amazon</a>
+          <a href="#">Sell under Amazon Accelerator</a>
+          <a href="#">Protect and Build Your Brand</a>
+          <a href="#">Amazon Global Selling</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Fulfilment by Amazon</a>
+          <a href="#">Advertise Your Products</a>
+          <a href="#">Amazon Pay on Merchants</a>
+        </div>
+        <div>
+          <h4>Let Us Help You</h4>
+          <a href="#">Your Account</a>
+          <a href="#">Returns Centre</a>
+          <a href="#">Recalls and Product Safety Alerts</a>
+          <a href="#">100% Purchase Protection</a>
+          <a href="#">Amazon App Download</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <img
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="Amazon Logo"
+        />
+        <div class="footer-buttons">
+          <button>🌐 English</button>
+          <button>🇮🇳 India</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <h5>AbeBooks</h5>
+          <p>Books, art & collectibles</p>
+        </div>
+        <div>
+          <h5>Amazon Web Services</h5>
+          <p>Scalable Cloud Computing Services</p>
+        </div>
+        <div>
+          <h5>Audible</h5>
+          <p>Download Audio Books</p>
+        </div>
+        <div>
+          <h5>IMDb</h5>
+          <p>Movies, TV & Celebrities</p>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>
+          Conditions of Use & Sale | Privacy Notice | Interest-Based Ads
+          <br />
+          © 1996–2025, Amazon.com, Inc. or its affiliates
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
